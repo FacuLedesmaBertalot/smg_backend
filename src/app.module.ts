@@ -1,14 +1,14 @@
 import { Module } from '@nestjs/common';
 import { createObserveModule } from '@nestjs/observe';
-import { AppService } from './app.service.js';
-import { UsuariosModule } from './usuarios/usuarios.module.js';
+import { UsersModule } from './users/users.module.js';
 import { PrismaModule } from './prisma/prisma.module.js';
+import { HealthController } from './health/health.controller.js';
 
 export const { ObserveModule, ObserveInstrument } = createObserveModule();
 
 @Module({
-  imports: [UsuariosModule, PrismaModule],
-  controllers: [],
-  providers: [AppService],
+  imports: [ PrismaModule, UsersModule],
+  controllers: [HealthController],
+  providers: [],
 })
 export class AppModule {}
