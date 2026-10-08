@@ -22,3 +22,7 @@ Este repositorio utiliza una estrategia de ramas estructurada para separar el de
 3. Se abre un **Pull Request (PR) hacia `develop`** para revisión e integración.
 4. Periódicamente, se abre un **PR de `develop` a `staging`** para liberar nuevas características al equipo de frontend.
 5. Previo a una entrega formal, se abre un **PR de `staging` a `main`**.
+
+
+## 🌍 Entornos
+- **Staging (API de Pruebas):** `URL_PENDIENTE`
